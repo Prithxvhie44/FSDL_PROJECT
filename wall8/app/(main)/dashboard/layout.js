@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import DashboardPage from './page'
 import { BarLoader } from 'react-spinners'
 
@@ -7,9 +7,9 @@ const Dashboard = () => {
         <div className='px-5 '>
             <h1 className='text-6xl font-bold gradient-title mb-5'>
                 Dashboard Page</h1>
-                <suspense fallback={<BarLoader/>}>
+                <Suspense fallback={<BarLoader/>}>
                 <DashboardPage/>
-                </suspense>
+                </Suspense>
             
         </div>
     )
