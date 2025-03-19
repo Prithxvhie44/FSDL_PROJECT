@@ -6,3 +6,4 @@ export const accountSchema = z.object({
     balance: z.string().min(1, "Balance is required"),
     isDefault : z.boolean().default(false),
 });
+
